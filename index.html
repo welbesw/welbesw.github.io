@@ -4,16 +4,14 @@ title: My UIViews
 ---
 
 {% for post in site.posts %}
-<!-- blog entry -->
-<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-<p>Posted on {{ post.date | date: '%B %d, %Y' }}</p>
-<hr>
-{{ post.excerpt }}
-<a class="btn btn-primary" href="{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-        
-<hr>
+	<!-- blog entry -->
+	<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+	<hr/>
+	<p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date: '%B %d, %Y' }}</p>
+	{{ post.excerpt }}
+	<a class="btn btn-primary" href="{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+	<br/><br/><br/>
 {% endfor %}
-
 <!-- pager -->
 <ul class="pager">
 	<li class="previous"><a href="#">&larr; Older</a></li>
