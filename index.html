@@ -3,11 +3,13 @@ layout: default
 title: My UIViews
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+{% for post in site.posts %}
+<!-- blog entry -->
+<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+<p>Posted on {{ post.date | date: '%B %d, %Y' }}</p>
+<hr>
+{{ post.excerpt }}
+<a class="btn btn-primary" href="{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+        
+<hr>
+{% endfor %}
