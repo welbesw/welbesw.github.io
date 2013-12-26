@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "US Smart Phone Platform Breakdown"
-date:   2013-05-13 11:00:00
+date:   2013-05-17 11:00:00
 categories: iOS Android
 ---
 
