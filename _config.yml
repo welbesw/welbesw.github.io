@@ -1,4 +1,5 @@
 name: "[My UIViews]"
 markdown: redcarpet
 pygments: true
-plugins: plugins
+paginate: 10
+paginate_path: "page:num"
