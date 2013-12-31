@@ -1,3 +1,4 @@
 name: "[My UIViews]"
 markdown: redcarpet
 pygments: true
+plugins: plugins
