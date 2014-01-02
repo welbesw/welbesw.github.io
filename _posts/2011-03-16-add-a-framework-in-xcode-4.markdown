@@ -2,7 +2,7 @@
 layout: post
 title:  "Add a Framework in Xcode 4"
 date:   2011-03-16 11:00:00
-categories: Xcode iOS
+tags: Xcode iOS
 ---
 
 In Xcode 4, there's no option click menu item to provide for adding a new framework to your project like there was in Xcode 3.  After hunting around in Xcode 4, I was able to figure out how to add a new framework in:

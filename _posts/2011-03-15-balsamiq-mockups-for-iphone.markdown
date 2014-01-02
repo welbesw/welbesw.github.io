@@ -2,7 +2,7 @@
 layout: post
 title:  "Balsamiq Mockups for iPhone"
 date:   2011-03-15 11:00:00
-categories: iPhone
+tags: iPhone
 ---
 
 Over the past several weeks, I've encountered [Balsamiq Mocups](http://balsamiq.com/products/mockups) as a tool for creating wireframes of iPhone apps.  This week, I downloaded a trial version to do some mock ups of my own.  Balsamiq offers a fully functional 7 day trial that requires a license to save designs after the trial period is complete.

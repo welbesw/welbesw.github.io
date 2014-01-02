@@ -2,7 +2,7 @@
 layout: post
 title:  "Tapworthy"
 date:   2011-01-11 10:00:00
-categories: iOS UX
+tags: iOS UX
 ---
 
 A couple weeks ago, I got a homework assignment from Jake, our Technical Architect at Centare, and an iOS wiz.... to read [Tapworthy](http://www.amazon.com/gp/product/1449381650?ie=UTF8&tag=mozeebookscom-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1449381650) by Josh Clark. I've been enjoying it thus far - some great insight on human interaction with the iPhone.  I've already started to incorporate some of the concepts in my development thought process.  The author does an excellent job articulating some things that I felt I understood, but didn't really have a way of explaining, as well as pointing out lots of new stuff that I've never thought about.  It's very iPhone specific, but I find that to be better than a more generic, device agnostic, approach to the subject matter.

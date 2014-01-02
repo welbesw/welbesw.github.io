@@ -2,7 +2,7 @@
 layout: post
 title:  "Tablet Computing Roundup"
 date:   2012-06-01 11:00:00
-categories: tablets
+tags: tablets
 ---
 
 If you’re not a tablet owner yet, you’ve no doubt encountered some of the millions of tablets being toted around today.  Consumers and businesses alike are buying into tablet computing with a momentum that exceeds most other computing products.  The launch of the iPad in March of 2010 created what we know today to be the ‘tablet’ category of devices and setup an entirely new set of paradigms for how users compute on the move.  Despite some initial projections from analysts that consumers wouldn’t take the bait, the iPad has gone on to be become a resounding success for Apple.  Several other manufacturers have also thrown their tablets into the ring, marking 2011 and 2012 as a pivotal time for tablets.  So with all of the choices in the market, how does one go about deciding on a tablet?  Let’s a take a look at some of the options available and compare and contrast what each has to offer.

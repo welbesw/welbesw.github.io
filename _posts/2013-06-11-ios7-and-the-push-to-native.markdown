@@ -2,7 +2,7 @@
 layout: post
 title: "iOS 7 and the Push to Native"
 date: 2013-06-11 18:07
-categories: WWDC iOS
+tags: WWDC iOS
 ---
 
 As I use the newly unveiled beta of iOS 7, I can't help but think that the OS is going to continue to drive more apps to full native development. As with previous releases of iOS, Apple is stretching the software and graphics capabilities in subtle but significant ways to deliver a polished best in class user experience.  In order to fully take advantage of the new UI paradigms and capabilities in iOS 7, developers will need to make use of the SDK and powerful tools it provides. HTML5 based app solutions will begin to stand out further from native and not in a good way.  Hybrid app solutions will not be able to take advantage of some of the great physics based UI elements that have been added to the iOS SDK.  Native app development is how Apple intends developers to write apps for their platform.  All of the tools and APIs are written to maximize the capability and productivity of native app developers.  It's not just Apple that has designed their platform this way, but the other major mobile platforms as well.  There's no intention to inject a third party between the developer and the platform.  The promises of a shortcut and potential productivity gains just aren't worth the loss in user experience.  Apple has provided some very powerful and easy to use APIs in the new SDK that will enable some very subtle, but pleasing UI interactions that users will come to expect.

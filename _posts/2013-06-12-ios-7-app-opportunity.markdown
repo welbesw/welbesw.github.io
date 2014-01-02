@@ -2,7 +2,7 @@
 layout: post
 title: "iOS 7: App Opportunity"
 date: 2013-06-12 21:20
-categories: iOS
+tags: iOS
 ---
 
 Apple's unveiling of iOS 7 at WWDC this week has kicked off the countdown to a release date this fall.  When iOS 7 launches, there will be some new opportunities for apps to set themselves apart.  Apps that have not been updated to the new paradigms for iOS 7 will begin to show their age.  A similar scenario presented itself when the iPhone 5 was released with a new screen form factor.  Remember how it was with apps that weren't updated to fully support the iPhone 5 screen size?  Heck, there's still apps out there that haven't been updated.  Well that was a much simpler change in the ecosystem and generally much easier to adopt than the overhaul that iOS 7 introduces.

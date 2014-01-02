@@ -2,7 +2,7 @@
 layout: post
 title: "Mobile Development Education in Milwaukee"
 date: 2013-07-22 10:00
-categories: WWDC
+tags: WWDC
 ---
 
 There’s a huge shift in computing under way.  In 2013, statistical trends show that worldwide shipments of tablets will out pace that of PCs.  That’s just tablets.  In 2010, shipments of smart phones blew past PCs at record pace and never looked back.  This adoption of mobile devices is the most rapid shift in computing the world has ever seen.  Just over 6 years ago, Apple released the iPhone and set off the spark that ignited the mobile revolution.  Ready or not, mobile is here in force.

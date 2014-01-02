@@ -2,7 +2,7 @@
 layout: post
 title:  "WWDC Eve"
 date:   2013-06-09 11:00:00
-categories: wwdc
+tags: wwdc
 ---
 
 'Twas the night before DubDub, when all thru the city, 

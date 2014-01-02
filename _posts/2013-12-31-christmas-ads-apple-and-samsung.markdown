@@ -2,7 +2,7 @@
 layout: post
 title: "Christmas Ads: Apple and Samsung"
 date: 2013-12-31 15:00
-categories: Apple
+tags: Apple
 ---
 
 Apple and Samsung had two very different approaches to advertising over the Christmas holiday this year.  Apple first launched an ad called "Misunderstood" that shows a family gathering at Christmas.  The ad is very well done and comes off as very authentic.  On our trip to Northern Michigan, I had my wife, Mandi, watch it.  I mentioned seeing it play on TV but she hadn't seen it.  She was nearly in tears watching the ad.  I'm sure being in the family van with our kids in the back headed home for Chistmas probably set the right context for that, but needless to say - mission accomplished Apple.

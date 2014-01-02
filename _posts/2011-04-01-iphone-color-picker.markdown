@@ -2,7 +2,7 @@
 layout: post
 title:  "iPhone Color Picker"
 date:   2011-04-01 11:00:00
-categories: iPhone iOS
+tags: iPhone iOS
 ---
 
 At [Centare](http://www.centare.com), I've recently developed a color picker for iOS (iPhone and iPad).  It's a set of UIViews that allows a user to pick a color via a Hue, Saturation, Value (HSV) interface.  Here's a screenshot of what it looks like inside a test application.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Xcode 4 GM seed side by side with Xcode 3.2.5"
 date:   2011-02-11 11:00:00
-categories: Xcode
+tags: Xcode
 ---
 
 Apple released a new version of Xcode 4 - the GM seed - that can now be used to develop and submit apps for the app store.  Previously, the previews that they had available could not be used for building apps for app store submission.  This made it somewhat useless for me at the time.  With the ability to build and submit apps to the app store, I decided it was time to install the Xcode 4 GM seed and start using it with real projects being built for enterprise and the app store. 

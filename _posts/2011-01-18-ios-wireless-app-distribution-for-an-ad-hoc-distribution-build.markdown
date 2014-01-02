@@ -2,7 +2,7 @@
 layout: post
 title:  "iOS Wireless App Distribution for an Ad-Hoc Distribution Build"
 date:   2011-01-18 11:00:00
-categories: iOS
+tags: iOS
 ---
 
 Since the release of iOS 4, first on the iPhone 4 and now on the iPad with 4.2, you can distribute your app wirelessly - allowing users to install the app directly on their device without using iTunes or the iPhone configuration utility. This makes it very easy to publish a build to a web location and allow users to browse to a website in safari on the device and simply click a link to install the app. For Ad-Hoc distributions, the install still requires the mobile provisioning profile to be installed on the device, but the install is very much simplified following this process. This also allows apps to be installed onto remote devices that are not located near the developer or without having to email the ipa file with detailed instructions. I'm a big fan of making the install process as simple as possible.
