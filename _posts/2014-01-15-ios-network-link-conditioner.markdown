@@ -15,19 +15,19 @@ Mobile devices connect to the Internet via a wide range of connection types and 
 
 2. Open settings in the iOS 7 device.  Scroll down to find the "Developer" menu option.
 
-<img src="/img/link-conditioner-4.png" class="img-responsive center-block" alt="iOS 7 Settings: Developer Menu Option">
+ <img src="/img/link-conditioner-4.png" class="img-responsive center-block" alt="iOS 7 Settings: Developer Menu Option">
 
 3. Tap "Developer" and you'll see the developer options below listed.  
 
-<img src="/img/link-conditioner-1.png" class="img-responsive center-block" alt="iOS 7 Settings: Developer">
+ <img src="/img/link-conditioner-1.png" class="img-responsive center-block" alt="iOS 7 Settings: Developer">
 
 4. Tap on "Network Link Conditioner" to view the options.
 
-<img src="/img/link-conditioner-3.png" class="img-responsive center-block" alt="iOS 7 Settings: Link Conditioner">
+ <img src="/img/link-conditioner-3.png" class="img-responsive center-block" alt="iOS 7 Settings: Link Conditioner">
 
 5. Choose one of the pre defined profile options like 3G or Edge to simulate a slower network connection.  You can also add a custom profile where you define items like the bandwidth, packet loss, delay, etc.
 
-<img src="/img/link-conditioner-2.png" class="img-responsive center-block" alt="iOS 7 Settings: Add Link Conditioner Profile">
+ <img src="/img/link-conditioner-2.png" class="img-responsive center-block" alt="iOS 7 Settings: Add Link Conditioner Profile">
 
 6. Tap the "Enable" switch to turn on the network link conditioner with the selected profile.
 
