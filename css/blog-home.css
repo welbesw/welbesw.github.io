@@ -36,3 +36,11 @@ footer {
 .post-list li {
 	margin: 0px 0px 10px 0px;
 }
+
+.footer .row {
+	line-height: 40px;
+}
+
+.footer-social-icons {
+	font-size: 25px;
+}
