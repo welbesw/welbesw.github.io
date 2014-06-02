@@ -5,9 +5,9 @@ date:   2014-06-01 20:00:00
 tags: iOS
 ---
 
-This past weekend, I came across [a blog posting by Tom Harrington of Atomic Bird](http://www.atomicbird.com/blog/passbook-ibeacon-business-card) that talked about how he created a Passbook business card in preparation for heading to WWDC this week.  Inspired by his creativity, and missing out on not being at WWDC this year after having been the past three years, I set out to create my own Passbook business card.  Here's a step by step of how I did it.  You can reference [Apple's Developer documentation on Passbook](https://developer.apple.com/library/ios/documentation/userexperience/conceptual/PassKit_PG/Chapters/YourFirst.html#//apple_ref/doc/uid/TP40012195-CH2-SW1) for more information as well.
+This past weekend, I came across [a blog posting by Tom Harrington of Atomic Bird](http://www.atomicbird.com/blog/passbook-ibeacon-business-card) that talked about how he created a Passbook business card in preparation for heading to WWDC this week.  Inspired by his creativity, and missing out on not being at WWDC this year after having been the past three years, I set out to create [my own Passbook business card](https://welbes-shared.s3.amazonaws.com/williamwelbes.pkpass).  Here's a step by step of how I did it.  You can reference [Apple's Developer documentation on Passbook](https://developer.apple.com/library/ios/documentation/userexperience/conceptual/PassKit_PG/Chapters/YourFirst.html#//apple_ref/doc/uid/TP40012195-CH2-SW1) for more information as well.
 
-<img src="/img/pass.png" class="img-responsive center-block" alt="William Welbes's Business Card Passbook Pass">
+<a href="https://welbes-shared.s3.amazonaws.com/williamwelbes.pkpass"><img src="/img/pass.png" class="img-responsive center-block" alt="William Welbes's Business Card Passbook Pass"></a>
 
 ###1. Create a Passbook Pass Type ID and Signing Certificate###
 
