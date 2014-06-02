@@ -5,7 +5,7 @@ date:   2014-06-01 20:00:00
 tags: iOS
 ---
 
-This past weekend, I came across [a blog posting by Tom Harrington of Atomic Bird](http://www.atomicbird.com/blog/passbook-ibeacon-business-card) that talked about how he created a Passbook business card in preparation for heading to WWDC this week.  Inspired by his creativity, and missing out on not being at WWDC this year after having been the past three years, I set out to create [my own Passbook business card](https://welbes-shared.s3.amazonaws.com/williamwelbes.pkpass).  Here's a step by step of how I did it.  You can reference [Apple's Developer documentation on Passbook](https://developer.apple.com/library/ios/documentation/userexperience/conceptual/PassKit_PG/Chapters/YourFirst.html#//apple_ref/doc/uid/TP40012195-CH2-SW1) for more information as well.
+This past weekend, I came across [a blog posting by Tom Harrington of Atomic Bird](http://www.atomicbird.com/blog/passbook-ibeacon-business-card) that talked about how he created a Passbook business card in preparation for heading to WWDC this week.  Inspired by his creativity, and missing out on not being at WWDC this year after having been there past three years, I set out to create [my own Passbook business card](https://welbes-shared.s3.amazonaws.com/williamwelbes.pkpass).  Here's a step by step of how I did it.  You can reference [Apple's Developer documentation on Passbook](https://developer.apple.com/library/ios/documentation/userexperience/conceptual/PassKit_PG/Chapters/YourFirst.html#//apple_ref/doc/uid/TP40012195-CH2-SW1) for more information as well.
 
 <a href="https://welbes-shared.s3.amazonaws.com/williamwelbes.pkpass"><img src="/img/pass.png" class="img-responsive center-block" alt="William Welbes's Business Card Passbook Pass"></a>
 
@@ -127,7 +127,7 @@ Here's the contents of the pass.json file that I created for my Passbook busines
 
 Once you've got your pass package directory all setup, all you need to do to create your pass is sign and package it using a tool that Apple provides the source code to.  The [companion file](https://developer.apple.com/library/ios/documentation/userexperience/conceptual/PassKit_PG/Passbook%20Companion%20Files.zip) that Apple posted contains a project called "SignPass" that you will need to build using Xcode.  Once you build the project, put the output signpass executable somewhere that you can run it from within your path in terminal.
 
-Open terminal and navigate to the directory that contains your pass package directory.  Run the signpackage command to sign and build the package using your package contents and signing certificate.
+Open terminal and navigate to the directory that contains your pass package directory.  Run the signpass command to sign and build the package using your package contents and signing certificate.
 
 ```
 signpass -p yourdirectoryname.pass
