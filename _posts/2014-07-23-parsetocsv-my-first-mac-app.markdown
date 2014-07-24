@@ -3,6 +3,7 @@ layout: post
 title:  "ParseToCSV: My First Mac App"
 date:   2014-07-23 20:00:00
 tags: iOS
+description: "Earlier this month, my first Mac app, ParseToCSV was launched in the Mac App Store."
 ---
 
 Earlier this month, my first Mac app, [ParseToCSV][app-store-link] was launched in the [Mac App Store][app-store-link].  If you're thinking, "Hey this thing is called My UIViews, not My NSViews", you're right.  Since 2008, I've been focused on UIKit and iOS development.  On occasion, I've dabbled in Cocoa, and ParseToCSV is the first app that I've actually released to the store.  Having a strong grasp on UIKit seems like a good foundation for venturing into Cocoa and Mac development.  There certainly are differences in the design approaches and environments, but as I've become more experienced in UIKit, I've found it to be a natural progression.  I sometimes wonder what it would have been to take the opposite path, having first started in Cocoa and then jumping into Cocoa Touch.
