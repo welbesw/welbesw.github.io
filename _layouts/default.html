@@ -4,11 +4,18 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="">
-      <meta name="author" content="">
+      <meta name="description" content="An iOS development blog written by William Welbes.">
+      <meta name="author" content="William Welbes">
       
+      <meta property="og:title" content="{{ page.title }}" />
+
+      {% if page.image %}
+      <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+      {% else %}
+      <meta property="og:image" content="{{ site.url }}/img/myuiviews-logo@2x.png" />
+      {% endif %}
+
       <title>{{ page.title }}</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
