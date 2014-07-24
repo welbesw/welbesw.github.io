@@ -32,7 +32,7 @@ Start by creating a directory for your pass package contents with a .pass extens
 Prepare the logo, thumbnail and icon PNG images and place them in your pass directory.  You should have both a 1x and 2x size PNG for each and use the naming convention specified by Apple:  
 
 * logo.png: max points is 160pt x 50pt.  I used a 50pt by 50pt image (with a 100 by 100 @2x image)
-* thumbnail.png: the allotted space for the thumbnail is 90px by 90pt.
+* thumbnail.png: the allotted space for the thumbnail is 90pt by 90pt.
 * icon.png: use a 29px by 29px and 58px by 58px @2x icon files
 
 You can view some [sample passes from Apple's companion file](https://developer.apple.com/library/ios/documentation/userexperience/conceptual/PassKit_PG/Passbook%20Companion%20Files.zip) the is posted with the Passbook Programming Guide.
