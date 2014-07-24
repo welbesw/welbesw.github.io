@@ -3,6 +3,7 @@ layout: post
 title:  "Iterate over the attributes of an NSManagedObject"
 date:   2011-01-11 11:00:00
 tags: iOS
+description: "Given an NSManagedObject subclass that has several attributes defined as properties - a class file created from the CoreData model - how can one determine if the NSString attributes are empty?"
 ---
 
 Given an NSManagedObject subclass that has several attributes defined as properties - a class file created from the CoreData model - how can one determine if the NSString attributes are "empty"?

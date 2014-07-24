@@ -3,6 +3,7 @@ layout: post
 title:  "NSDate Comparison - Which date is older?"
 date:   2011-01-10 10:00:00
 tags: iOS Objective-C
+description: "I had to lookup how to do date comparisons in Objective-C this morning to be able to determine if one date is older than another. The above check will determine if dateOne is before dateTwo."
 ---
 
 I had to lookup how to do date comparisons in Objective-C this morning to be able to determine if one date is older than another:

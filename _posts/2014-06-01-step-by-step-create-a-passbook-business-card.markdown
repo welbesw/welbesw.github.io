@@ -3,6 +3,7 @@ layout: post
 title:  "Step by Step: Create a Passbook Business Card"
 date:   2014-06-01 20:00:00
 tags: iOS
+description: "This past weekend, I came across a blog posting by Tom Harrington of Atomic Bird that talked about how he created a Passbook business card in preparation for heading to WWDC this week. Inspired by his creativity, and missing out on not being at WWDC this year after having been there past three years, I set out to create my own Passbook business card. Here's a step by step of how I did it."
 ---
 
 This past weekend, I came across [a blog posting by Tom Harrington of Atomic Bird](http://www.atomicbird.com/blog/passbook-ibeacon-business-card) that talked about how he created a Passbook business card in preparation for heading to WWDC this week.  Inspired by his creativity, and missing out on not being at WWDC this year after having been there past three years, I set out to create [my own Passbook business card](https://welbes-shared.s3.amazonaws.com/williamwelbes.pkpass).  Here's a step by step of how I did it.  You can reference [Apple's Developer documentation on Passbook](https://developer.apple.com/library/ios/documentation/userexperience/conceptual/PassKit_PG/Chapters/YourFirst.html#//apple_ref/doc/uid/TP40012195-CH2-SW1) for more information as well.

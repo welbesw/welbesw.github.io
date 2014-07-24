@@ -3,6 +3,7 @@ layout: post
 title: "iBeacon Primer"
 date: 2014-01-09 17:20
 tags: iOS iBeacon
+description: "With the launch of iOS 7, Apple incorporated support for a new Bluetooth Low Energy (LE) protocol they defined as iBeacon. With all of the other visual changes in iOS 7, iBeacon fell a bit below the radar. Over the past several weeks, it seems that the tech press has picked up on the feature and iBeacon has been getting some more attention. So what's it all about?"
 ---
 
 With the launch of iOS 7, Apple incorporated support for a new Bluetooth Low Energy (LE) protocol they defined as iBeacon.  With all of the other visual changes in iOS 7, iBeacon fell a bit below the radar. Over the past several weeks, it seems that the tech press has picked up on the feature and iBeacon has been getting some more attention.  So what's it all about? 

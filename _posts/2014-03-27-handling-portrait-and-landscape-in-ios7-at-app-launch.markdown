@@ -3,6 +3,7 @@ layout: post
 title:  "Handling Portrait And Landscape in iOS 7 at App Lanuch"
 date:   2014-03-27 16:00:00
 tags: iOS
+description: "I've recently been updating one of my iPad apps with a new iOS 7 version that supports both landscape and portrait orientations. Using storyboards, I laid out the interface in portrait. I then setup a custom method to setup the views for portrait or landscape depending on the orientation of the device. Or so I thought."
 ---
 
 I've recently been updating one of my iPad apps with a new iOS 7 version that supports both landscape and portrait orientations.  Using storyboards, I laid out the interface in portrait.  I then setup a custom method to setup the views for portrait or landscape depending on the orientation of the device.  Or so I thought.  I struggled to get the app to properly setup the interface orientation after launching in landscape.  Everything worked great when the app launched in portrait, but the rotation method was not getting called at app launch, so views were not properly setup when launched in landscape.  Here's how I solved it.

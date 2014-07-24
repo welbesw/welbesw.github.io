@@ -3,6 +3,7 @@ layout: post
 title: "February 1st: App Submissions Must Support iOS7"
 date: 2014-01-13 15:00
 tags: iOS Apple
+description: "Are you planning to submit a new app or app update after February 1st?  Heads up developers, Apple will be requiring all apps to be built with the latest version of Xcode and the latest iOS 7 SDK."
 ---
 
 Are you planning to submit a new app or app update after February 1st?  Heads up developers, Apple will be requiring all apps to be built with the latest version of Xcode and the latest iOS 7 SDK.

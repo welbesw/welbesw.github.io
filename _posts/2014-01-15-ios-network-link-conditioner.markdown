@@ -3,6 +3,7 @@ layout: post
 title:  "iOS Network Link Conditioner"
 date:   2014-01-15 17:00:00
 tags: iOS
+description: "Need to test your app on slow cellular connections? Bring on the iOS network link conditioner! As a best practice for mobile development, developers and testers should test network connected apps under lots of different network conditions on real mobile devices."
 ---
 
 Need to test your app on slow cellular connections?  Bring on the iOS network link conditioner!  As a best practice for mobile development, developers and testers should test network connected apps under lots of different network conditions on real mobile devices.  The simulator can be great for some development activity, but a majority of your development and testing should be on a real device.
