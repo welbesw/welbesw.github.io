@@ -2,7 +2,10 @@
 layout: default
 ---
 <h2>{{ page.title }}</h2>
-<p class="meta"> Posted on {{ page.date | date: '%B %d, %Y' }} by <a href="/about.html">{{ site.author }}</a></p>
+<p class="meta">
+	<a href="/about.html"><img src="/img/will-small.jpg" alt="William Welbes" class="img-rounded post-author-photo" /></a> 
+	<a href="/about.html">{{ site.author }}</a> on {{ page.date | date: '%B %d, %Y' }}
+</p>
 <hr/>
 <div class="post">
 {{ content }}
