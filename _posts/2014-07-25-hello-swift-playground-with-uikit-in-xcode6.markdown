@@ -3,7 +3,7 @@ layout: post
 title:  "Hello Swift Playground with UIKit in Xcode 6"
 date:   2014-07-25 13:00:00
 tags: iOS
-description: ""
+description: "With the launch of Xcode 6 and iOS 8 at WWDC this year, Apple also introduced a new programming language called Swift.  One of the cool new features of Swift that's integrated into Xcode 6 is Playgrounds - a place to play with code and view output in real time."
 ---
 
 With the launch of Xcode 6 and iOS 8 at WWDC this year, Apple also introduced a new programming language called Swift.  One of the cool new features of Swift that's integrated into Xcode 6 is Playgrounds - a place to play with code and view output in real time.  Over the years developing on iOS, I've often cluttered my projects directory with projects named SomethingTest, HelloSomething, etc. as I create small projects to test some code.  Enter playgrounds in swift to replace those types of projects that never got committed.  It seems that playgrounds could now follow inside a project and enable better collaboration with other team members on development code.
