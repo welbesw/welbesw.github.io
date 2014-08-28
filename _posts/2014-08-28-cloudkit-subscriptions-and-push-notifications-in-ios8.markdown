@@ -4,6 +4,7 @@ title:  "CloudKit Subscriptions and Push Notifications in iOS8"
 date:   2014-08-28 15:00:00
 tags: iOS
 description: "Let's take a look at how to use push notifications with CloudKit subscriptions in iOS 8."
+excerpt: "As I have been implementing an app using Apple's new CloudKit for iOS 8, I've come across a few hurdles, as expected.  It's a brand new platform as a service offering from Apple, a company that doesn't yet have a strong history in the domain.  That being said, it is a pretty compelling offering and there is a lot to like.<br/><br/>"
 ---
 
 <img src="/img/cloudkit.png" alt="Apple's CloudKit for iOS 8" style="float:left; padding-right:20px; padding-bottom:20px;" />
