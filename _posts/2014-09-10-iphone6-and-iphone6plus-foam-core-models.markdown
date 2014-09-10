@@ -8,7 +8,7 @@ description: "Let's take a look at how to use push notifications with CloudKit s
 excerpt: "With the launch of the iPhone 6 and iPhone 6 Plus yesterday, Apple launched two new models that are much larger than the current iPhone 5 and 5s form factor.  Since I'm eligible for upgrade, I'm planning to preorder one of the devices on Friday when they go on sale.<br/><br/>"
 ---
 
-<img src="/img/iphone6-foam-core.jpg" alt="iPhone 6 and iPhone 6 Plus Foam Core Models" class="img-reponsive center-block" />
+<img src="/img/iphone6-foam-core.jpg" alt="iPhone 6 and iPhone 6 Plus Foam Core Models" class="img-responsive" />
 
 With the launch of the iPhone 6 and iPhone 6 Plus yesterday, [Apple launched two new models](http://www.apple.com/iphone-6/films/#video-product) that are much larger than the current iPhone 5 and 5s form factor.  Since I'm eligible for upgrade, I'm planning to preorder one of the devices on Friday when they go on sale.
 
