@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  "A Bigcommerce Stores API in Swift for iOS and OSX"
-date:   2015-02-01 10:00:00
+date:   2015-12-21 15:34:00
 tags: Swift
-image: /img/the-presidents-for-ios-screenshots.png
 description: "Looking for a way to connect to the Bigcommerce Stores API via iOS or OSX?  I've developed a simple Swift api while developing my app Order View for Bigcommerce."
 excerpt: "Looking for a way to connect to the Bigcommerce Stores API from iOS or OSX?  I recently developed a Swift API that can be used within iOS and OSX apps.<br/><br/>"
 ---
