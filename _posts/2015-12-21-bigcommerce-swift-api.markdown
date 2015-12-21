@@ -11,11 +11,11 @@ Looking for a way to connect to the Bigcommerce Stores API from iOS or OSX?  I r
 
 [BigcommerceApi on Github][github-link]
 
-I've also publisehd the API as a cocoapod here:
+I've also published the API as a Cocoapod here:
 
 [BigcommerceApi Cocoapod][cocoapod-link]
 
-I created the api and cocoapod as I recently developed and released an adminstrative app for Bigcommerce store administrators called [Order View][order-view-app-link] on the iOS App Store.
+I created the api and cocoapod as I recently developed and released an administrative app for Bigcommerce store administrators called [Order View][order-view-app-link] on the iOS App Store.
 
 [github-link]: https://github.com/welbesw/BigcommerceApi
 [cocoapod-link]: https://cocoapods.org/pods/BigcommerceApi
