@@ -3,6 +3,7 @@ layout: post
 title:  "Looking for a way to print shipping labels on your Mac?"
 date:   2015-12-21 15:34:00
 tags: Swift
+image: /img/easyshipper-screenshot1.png
 description: "I recently created and launched Easy Shipper on the Mac app store, enabling Mac users to quote, buy and print shipping labels."
 excerpt: "I recently created and launched Easy Shipper on the Mac app store, enabling Mac users to quote, buy and print shipping labels..<br/><br/>"
 ---
