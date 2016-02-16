@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="William Welbes">
+      <meta name="p:domain_verify" content="241a9728596f4ea5eb7e658bafd1e0fc"/>
+      
+      {% if page.description %}
+      <meta name="description" content="{{ page.description }}">
+      {% endif %}
+
+      <meta property="og:title" content="{{ page.title }}" />
+
+      <title>{{ page.title }}</title>
+      
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+      <!-- Bootstrap -->
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="/fonts/font-awesome-4.0.3/css/font-awesome.min.css">
+
+      <!-- syntax highlighting CSS -->
+      <link rel="stylesheet" href="/css/syntax.css">
+
+      <!-- Custom CSS -->
+      <link href="/css/blog-home.css" rel="stylesheet">
+      <link href="/css/resume.css" rel="stylesheet">
+
+      <!-- Google Analytics Tracking -->
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-686082-13']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
+  </head>
+  <body>
+
+    <div class="container">
+
+      {{ content }}
+
+    </div><!-- /.container -->
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="/js/retina.js?v=2"></script>
+    </body>
+</html>

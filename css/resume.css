@@ -1,0 +1,87 @@
+body {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.resume-contact {
+	list-style-type: none;
+}
+
+.experience-title {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.experience-employer {
+	font-size: 1.2em;
+}
+
+.experience-dates {
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+.experience-title-row {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.opensource-title-row {
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.opensource-title {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.opensource-dates {
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+.opensource-link {
+
+}
+
+.opensource-description {
+
+}
+
+.apps-title-row {
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.apps-title {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.apps-dates {
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+.apps-link {
+
+}
+
+.apps-description {
+	padding-top: 5px;
+}
+
+@media print {
+  a[href]:after {
+    content: none;
+  }
+  a {
+  	text-decoration: underline;
+  }
+  body {
+  	margin-top: 30px;
+  }
+  .container {
+  	width: 90%; 
+  }
+}
