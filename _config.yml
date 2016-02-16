@@ -1,5 +1,4 @@
 name: "[My UIViews]"
-markdown: redcarpet
 highlighter: rouge
 paginate: 10
 paginate_path: "page:num"
