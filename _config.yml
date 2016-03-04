@@ -6,3 +6,9 @@ paginate_path: "page:num"
 url: http://www.myuiviews.com
 author: "William Welbes"
 gems: [jekyll-paginate]
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
