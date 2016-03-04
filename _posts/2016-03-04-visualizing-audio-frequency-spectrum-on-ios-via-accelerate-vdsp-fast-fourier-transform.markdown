@@ -79,6 +79,10 @@ I setup a simple NSTimer in the main ViewController class that performs a reques
 
 I've implemented the user interface components in Swift.  Swift provides a convenient way to make a Float array out of the buffer pointer that is passed back by the Objective-C class via the UnsafeBufferPointer.  This allows the data to be captured and consumed in a simple way by the Swift views.
 
+<a href="https://github.com/welbesw/CoreAudioMixer">
+	<img src="/img/core-audio-mixer.gif" alt="CoreAudioMixer" style="max-width:300px;" />
+</a>
+
 ### The Source ###
 
 You can check out [CoreAudioMixer][github-link] the source code on [GitHub][github-link].
