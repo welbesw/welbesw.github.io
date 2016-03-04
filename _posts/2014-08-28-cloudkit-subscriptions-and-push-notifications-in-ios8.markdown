@@ -23,7 +23,7 @@ As I got back to prototyping the approach, I took another look at the documentat
 
 Below is an example of processing remote notifications and setting a UILocalNotification in the App Delegate:
 
-```obj-c
+```objective_c
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
     NSLog(@"Push received.");

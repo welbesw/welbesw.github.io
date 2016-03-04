@@ -10,7 +10,7 @@ This past weekend, I came across [a blog posting by Tom Harrington of Atomic Bir
 
 <a href="https://welbes-shared.s3.amazonaws.com/williamwelbes.pkpass"><img src="/img/pass.png" class="img-responsive center-block" alt="William Welbes's Business Card Passbook Pass"></a>
 
-###1. Create a Passbook Pass Type ID and Signing Certificate###
+### 1. Create a Passbook Pass Type ID and Signing Certificate ###
 
 In order to create a Pass that can be loaded into Passbook, you'll need to properly sign the pass using a certificate/key pair that you generate with your developer account.  Head over to the [developer account](http://developer.apple.com) and navigate into the "Certificates, Identifiers & Profiles" area.
 
@@ -22,7 +22,7 @@ Click to add a new Pass Type ID.  Fill in a friendly name for the Pass Type and 
 
 Once you've created the Pass Type ID, you're ready to create the certificate.  Navigate to the "Certificates" section in the portal and click to add a new certificate.  The wizard with present you will a series of options for the type of certificate that you want to create.  Under Production, choose "Pass Type ID Certificate."  You will then be presented with the Pass Type ID that you created.  Choose that and continue.  Apple will then walk you through the normal CSR, key and certificate creation process to create the certificate using KeyChain.  Download the certificate locally once you've created it.
 
-###2. Prepare assets (logo, thumbnail, icon) for your pass###
+### 2. Prepare assets (logo, thumbnail, icon) for your pass ###
 
 You can add images to your pass for your logo, a thumbnail and a pass icon.  If you use a generic style pass, the logo is in the upper left, the thumbnail is on the right, and the icon is shown if your pass appears in a notification.  
 
@@ -38,7 +38,7 @@ Prepare the logo, thumbnail and icon PNG images and place them in your pass dire
 
 You can view some [sample passes from Apple's companion file](https://developer.apple.com/library/ios/documentation/userexperience/conceptual/PassKit_PG/Passbook%20Companion%20Files.zip) the is posted with the Passbook Programming Guide.
 
-###3. Create a pass.json file to define your pass###
+### 3. Create a pass.json file to define your pass ###
 
 [Apple's Developer Documentation](https://developer.apple.com/library/ios/documentation/userexperience/conceptual/PassKit_PG/Chapters/Creating.html#//apple_ref/doc/uid/TP40012195-CH4-SW1) defines the design and structure for Passbook passes. I used the "generic pass" layout.  You can customize the colors, images and fields using the Passbook pass JSON file and assets.  There are some important fields to include in your pass:
 
@@ -124,7 +124,7 @@ Here's the contents of the pass.json file that I created for my Passbook busines
 }
 ```
 
-###4. Sign and package your pass ###
+### 4. Sign and package your pass ###
 
 Once you've got your pass package directory all setup, all you need to do to create your pass is sign and package it using a tool that Apple provides the source code to.  The [companion file](https://developer.apple.com/library/ios/documentation/userexperience/conceptual/PassKit_PG/Passbook%20Companion%20Files.zip) that Apple posted contains a project called "SignPass" that you will need to build using Xcode.  Once you build the project, put the output signpass executable somewhere that you can run it from within your path in terminal.
 
@@ -136,7 +136,7 @@ signpass -p yourdirectoryname.pass
 
 Once you have successfully built the package, you'll see a file with .pkpass in your directory now.
 
-###5. Test and distribute your pass ###
+### 5. Test and distribute your pass ###
 
 Ok.  So now you have a .pkpass file.  How do you test it out?
 

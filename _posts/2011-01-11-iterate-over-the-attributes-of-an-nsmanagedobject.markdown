@@ -10,7 +10,7 @@ Given an NSManagedObject subclass that has several attributes defined as propert
 
 Rather than write code that checks each property on the object individually, I came up with the following method to iterate over the attributes of an NSManagedObject subclass: 
 
-```obj-c
+```objective_c
 //Define a variable to determine if all string attributes are blank
 BOOL isBlank = YES;
 
@@ -37,7 +37,7 @@ for (NSString * attributeName in [attributes allKeys]) {
 
 isEmpty is a category on NSString defined as follows:
 
-```obj-c
+```objective_c
 @implementation NSString (NSString_Additions)
 
 - (BOOL) isEmpty{

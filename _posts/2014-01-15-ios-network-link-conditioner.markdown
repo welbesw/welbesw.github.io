@@ -10,7 +10,7 @@ Need to test your app on slow cellular connections?  Bring on the iOS network li
 
 Mobile devices connect to the Internet via a wide range of connection types and speeds.  Network unreliability is an expected condition on mobile.  Our mobile devices push the paradigms of network connectivity into new space.  So how do we test for these different conditions?  Thankfully, Apple has included a network link conditioner right in iOS that helps to simulate different types of network connections right on a development device.
 
-###How to access and use the iOS link conditioner
+### How to access and use the iOS link conditioner ###
 
 1. Ensure your device is enabled as a development device via Xcode.  If you haven't already done so, inside Xcode, open up the Organizer window.  Tap on the Devices tab.  Select your connected device and view the information in the right panel.  Click the "Use for Development" button if you haven't already done so.  Now your device is enabled for development and the settings menu will include a new menu option.
 

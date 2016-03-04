@@ -27,7 +27,7 @@ Let's start by creating and viewing a UILabel.  A simple example of how you migh
 
 Add the following code to create a new UILabel:
 
-```
+```swift
 import UIKit
 
 var str = "Hello, playground"
@@ -45,7 +45,7 @@ Now we can get a view of the label using the Assistant Editor.  Open the Assista
 
 Now we can see the label with it's text that we set in the code above.  But that's kind of a boring label.  Let's add some color and round out the corners.  Type in the following code below the line that sets the text of the label, but above the final line with "helloLabel".  I encourage you to type it in and watch the output change in the Assistant Editor as you type.
 
-```
+```swift
 //Change the color and round the corners of the label
 helloLabel.backgroundColor = UIColor.greenColor()
 helloLabel.layer.masksToBounds = true
