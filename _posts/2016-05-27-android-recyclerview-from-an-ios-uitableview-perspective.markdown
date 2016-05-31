@@ -33,19 +33,61 @@ Here's a glimpse of a simple implementation of the important delegate methods of
 
 ## Android RecyclerView ##
 
-In a similar manner to the UITableView class, [RecyclerView][recyclerview-link] on Android reuses the item views that are provided by an adapter.  The RecylerView's responsibility is simple: to recycle the item views used and position them on screen.  A LinearLayout can be used to provide a table like layout that positions items in a fashion similar to UITableView.  The RecyclerView works with two other classes to create and maintain the items it displays: an Adapter subclass and a ViewHolder subclass. 
+In a similar manner to the UITableView class, [RecyclerView][recyclerview-link] on Android reuses the item views that are provided by an adapter.  In order to add the RecyclerView to your Android Studio project, you will need to import the recylclerview-v7 support library dependency.  In Android Studio, navigate to *File -> Project Structure* and select the app module on the left.  Select the *Dependencies* tab.  Use the + button and choose *Library* to add a dependency.  Find the recyclerview-v7 library in the list and click OK.
+
+<img src="/img/screen-shot-recyclerview-v7-add.png" class="img-responsive center-block" alt="Add recyclerview-v7 dependency">
+
+### RecyclerView ###
+
+The RecylerView's responsibility is simple: to recycle the item views used and position them on screen.  A LinearLayout can be used to provide a table like layout that positions items in a fashion similar to UITableView.  The RecyclerView works with two other classes to create and maintain the items it displays: an [Adapter][recyclerview-adapter-link] subclass and a [ViewHolder][viewholder-link] subclass. Let's walk through each of the classes needed and then tie them together in an Activity at the end.
 
 ### ViewHolder ###
 
-The ViewHolder has a simple job - to hold on to a View.  Excellent class name :) 
+The [ViewHolder][viewholder-link] has a simple job - to hold on to a View.  Excellent class name :)  
+
+The ViewHolder maintains references to the views contained within the item view.  The ViewHolder provides some efficiency to the recycler by maintaining these references so that calls to **findViewById()** are called once when the item is created as opposed to every time the item is bound to a new item in the list.  The **findViewById()** call can be an expensive call depending on the contents of the view since it is essentially walking the view hierarchy looking for the identifier specified.  Minimizing the number of calls to **findViewById()** or other view setup calls really does offer a performance improvement.  
+
+Here's a simple example of a ViewHolder that contains just one TextView.
+
+<script src="https://gist.github.com/welbesw/09a4c9bb67811f40803a044cbb376b78.js"></script>
+
+### Adapter ###
+
+The [RecyclerView Adapter][recyclerview-adapter-link] follows the Adapter pattern used frequently in Android development.  The RecyclerView will communicate with the adapter whenever a new ViewHolder needs to be created for an item.
+
+The **onCreateViewHolder()** method of the RecyclerView Adapter is called when a new ViewHolder is needed.  The method will inflate a view from a layout resource, or instantiate a view and return it to the recycler.  This method is only called when a new view holder is needed.  The RecyclerView should only need enough items to display on screen and provide some buffer when scrolling quickly.
+
+The **onBindViewHolder()** method is called each time the RecyclerView Adapter uses a ViewHolder for an item that is to be displayed on screen.  This method will be called lots of times for the items in your list.  It is prudent to be efficient in this method and simply bind the data elements of the item to the ViewHolder Views.
+
+The **getItemCount()** method is called by the RecyclerView to simply determine how many items are in the list.  The adapter is provided a reference to the items list when instantiated and will use that reference to determine the number of items in the list.
+
+Below is a simple implementation of the [RecyclerView.Adapter][recyclerview-adapter-link] subclass that implements the methods described above:
+
+<script src="https://gist.github.com/welbesw/12ec600d78bf54ee73a844189dada973.js"></script>
 
 ### Layout Manager ###
 
-When setting up the RecyclerView, you provide a layout manager that will tell it how to layout the views it maintains.  A simple table layout that presents items vertically can be accomplished with the LinearLayoutManager class.  There is also a GridLayoutManager or you can implement your own custom LayoutManager subclass to do something custom.
+When setting up the RecyclerView, we provide a layout manager that will tell it how to layout the views it maintains.  A simple table layout that presents items vertically can be accomplished with the LinearLayoutManager class.  There is also a GridLayoutManager or you can implement your own custom LayoutManager subclass to do something custom.  For our simple example, we will use the LinearLayoutManager to build a simple vertical scrolling table.
 
-In order to add the RecyclerView to your Android Studio project, you will need to import the recylclerview-v7 library dependency.
+### Tying it all together ###
+
+Now that we have a ViewHolder and an Adapter, we will implement the RecyclerView in a [Fragment][fragment-link] subclass that will be instantiated in an [Activity][activity-link] and displayed on screen.  Implementing views inside a Fragment allows for some flexibility and maintainability in how user interfaces are built for Android, rather than simply implementing everything inside an Activity subclass.
+
+Below is the RecyclerFragment implementation.  The fragment contains the list of items that will be displayed - in this case a simple array of strings.  The class also contains a reference to the RecyclerView that is a part of the fragment layout XML file and an instance of the ItemAdapter class.
+
+The bulk of the setup work is performed inside the **onCreateView()** method.  After inflating the fragment's layout from the resource file, a reference to the RecyclerView is created.  A call to **setLayoutManager()** on the RecyclerView using the LinearLayoutManager sets up how the RecyclerView will handle layout.  Lastly, the **loadDataAndUpdateUI()** method connects the adapter to the recycler view with the list of items to be displayed.  It also has a simple loop that first loads data items.  This load of data items would most likely be an asynchronous load of data items from network or load of items from a database or preferences.  Once all of the components are connected, the RecyclerView has enough logic to dynamically load and display items from the list, while recycling items along the way.  
+
+<script src="https://gist.github.com/welbesw/6ec55701719264ebce334c5290d230d2.js"></script>
+
+<script src="https://gist.github.com/welbesw/bbc35b860aad0f83f4c08fda72157334.js"></script>
+
+The [RecyclerView][recyclerview-link] provides a great pattern for implementing scrolling lists of items on Android.  The approach is very similar to how UITableView and UICollectionView on iOS operate.  If you have experience with the UITableView and UITableViewDataSource design patterns on iOS, you should be pretty comfortable using RecyclerView on Android.  Happy coding :)
 
 [recyclerview-link]: https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html
 [uitableview-link]: https://developer.apple.com/library/ios/documentation/UIKit/Reference/UITableView_Class/
 [uitableviewdatasource-link]: https://developer.apple.com/library/ios/documentation/UIKit/Reference/UITableViewDataSource_Protocol/index.html#//apple_ref/occ/intf/UITableViewDataSource
 [uitableviewdelegate-link]: https://developer.apple.com/library/ios/documentation/UIKit/Reference/UITableViewDelegate_Protocol/index.html#//apple_ref/occ/intf/UITableViewDelegate
+[viewholder-link]: https://developer.android.com/reference/android/support/v7/widget/RecyclerView.ViewHolder.html
+[recyclerview-adapter-link]: https://developer.android.com/reference/android/support/v7/widget/RecyclerView.Adapter.html
+[fragment-link]: https://developer.android.com/reference/android/app/Fragment.html
+[activity-link]: https://developer.android.com/reference/android/app/Activity.html
