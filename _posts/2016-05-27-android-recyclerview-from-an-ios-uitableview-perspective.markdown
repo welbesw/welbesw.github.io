@@ -5,6 +5,7 @@ date:   2016-05-27 9:00:00
 tags: Android
 image: /img/mixer-screen-shot-1.png
 description: "In iOS development, UITableView holds an important and prominent place at the table.  Apple has consistently used UITableView throughout iOS from the very first release of the iPhone and subsequently the SDK.  With and iOS perspective, let's take a look at the RecyclerView on Android and compare it to UITableView.<br/><br/>"
+excerpt: "In iOS development, UITableView holds an important and prominent place at the table.  Apple has consistently used UITableView throughout iOS since the very first release of the iPhone and subsequently the SDK.  The pattern is repeated throughout many of the apps on the platform as well.  If you develop in UIKit, you will undoubtedly have a strong understanding of UITableView, UITableViewDataSource, and UITableViewDelegate.  What about Android?<br/><br/>"
 ---
 
 <img src="/img/android-recyclerview.png" alt="CoreAudioMixer" class="img-responsive" />
