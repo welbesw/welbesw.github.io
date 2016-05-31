@@ -16,7 +16,7 @@ It's worth noting that Apple also introduced UICollectionView in iOS 6 which con
 
 ### Given what we know about UITableView - what is available on Android for displaying lists? ###
 
-When taking a look at Android, the ListView class seems to have similar functionality and also similar popularity in examples, references, and code out on the web.  However, with the release of Lollipop (Android 5.0) and version 7 of the Android Support Library, Google introduced a new collection display class called [RecyclerView][recyclerview-link]. 
+The Android ListView class seems to have similar functionality and also similar popularity in examples, references, and code out on the web.  However, with the release of Lollipop (Android 5.0) and version 7 of the Android Support Library, Google introduced a new collection display class called [RecyclerView][recyclerview-link]. 
 
 Since RecyclerView is a part of the v7 support library, RecyclerView can be used with Android 2.1 (API level 7) and higher - good news if you need to support older versions of Android before Lollipop.
 
