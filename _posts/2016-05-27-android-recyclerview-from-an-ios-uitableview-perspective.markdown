@@ -7,6 +7,8 @@ image: /img/mixer-screen-shot-1.png
 description: "In iOS development, UITableView holds an important and prominent place at the table.  Apple has consistently used UITableView throughout iOS from the very first release of the iPhone and subsequently the SDK.  With and iOS perspective, let's take a look at the RecyclerView on Android and compare it to UITableView.<br/><br/>"
 ---
 
+<img src="/img/android-recyclerview.png" alt="CoreAudioMixer" class="img-responsive" />
+
 In iOS development, [UITableView][uitableview-link] holds an important and prominent place at the table.  Apple has consistently used UITableView throughout iOS since the very first release of the iPhone and subsequently the SDK.  The pattern is repeated throughout many of the apps on the platform as well.  If you develop in UIKit, you will undoubtedly have a strong understanding of [UITableView][uitableview-link], [UITableViewDataSource][uitableviewdatasource-link], and [UITableViewDelegate][uitableviewdelegate-link]. 
 
 It's worth noting that Apple also introduced UICollectionView in iOS 6 which contains many of the powerful reuse paradigms of UITableView with even more flexibility in how items are displayed, allowing for things like grid views and other custom layouts.  In this article however, I'm going to use UITableView as an iOS reference since it is used more frequently and therefore probably more familiar to iOS developers.
@@ -82,6 +84,8 @@ The bulk of the setup work is performed inside the **onCreateView()** method.  A
 <script src="https://gist.github.com/welbesw/bbc35b860aad0f83f4c08fda72157334.js"></script>
 
 The [RecyclerView][recyclerview-link] provides a great pattern for implementing scrolling lists of items on Android.  The approach is very similar to how UITableView and UICollectionView on iOS operate.  If you have experience with the UITableView and UITableViewDataSource design patterns on iOS, you should be pretty comfortable using RecyclerView on Android.  Happy coding :)
+
+<img src="/img/recyclerview-screen-shot.png" alt="CoreAudioMixer" class="img-responsive" />
 
 [recyclerview-link]: https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html
 [uitableview-link]: https://developer.apple.com/library/ios/documentation/UIKit/Reference/UITableView_Class/
