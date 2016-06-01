@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Android RecyclerView from an iOS UITableView perspective"
+title:  "RecyclerView: Android's UITableView cousin"
 date:   2016-05-27 9:00:00
 tags: Android
 image: /img/mixer-screen-shot-1.png
