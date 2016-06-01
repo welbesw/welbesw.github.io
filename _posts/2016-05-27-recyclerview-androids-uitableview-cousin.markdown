@@ -28,7 +28,7 @@ Why is view reuse important for mobile?  When scrolling through long lists of it
 
 ### UITableView Approach ###
 
- In the iOS SDK, UITableView was built with the concept of cell reuse from the beginning.  The [UITableViewDataSource][uitableviewdatasource-link] provides mechanisms for a controller to provide the UITableView with elements like the number of cells, the number of cell sections, and a view to be used for a specified cell.  The interface provides a mechanism to dequeue reusable cells from the UITableView itself so that common table elements can be represented using a relatively small number of reusable cells that are updated just prior to the cell view being presented on screen.  When a view is scrolled off screen, UITableView reuses it by providing it to the delegate and allowing the cell data and display to be updated.
+ In the iOS SDK, UITableView was designed for cell reuse.  The [UITableViewDataSource][uitableviewdatasource-link] provides mechanisms for a controller to provide the UITableView with elements like the number of cells, the number of cell sections, and a view to be used for a specified cell.  The interface provides a mechanism to dequeue reusable cells from the UITableView itself so that common table elements can be represented using a relatively small number of reusable cells that are updated just prior to the cell view being presented on screen.  When a view is scrolled off screen, UITableView invalidates it and reuses it by providing it to the delegate and allowing the cell data views to be updated.
 
 Here's a glimpse of a simple implementation of the important delegate methods of the UITableViewDataSource:
 
@@ -42,7 +42,7 @@ In a similar manner to the UITableView class, [RecyclerView][recyclerview-link] 
 
 ### RecyclerView ###
 
-The RecylerView's responsibility is simple: to recycle the item views used and position them on screen.  A LinearLayout can be used to provide a table like layout that positions items in a fashion similar to UITableView.  The RecyclerView works with two other classes to create and maintain the items it displays: an [Adapter][recyclerview-adapter-link] subclass and a [ViewHolder][viewholder-link] subclass. Let's walk through each of the classes needed and then tie them together in an Activity at the end.
+The RecylerView's responsibility is simple: to recycle the item views used and position them on screen.  A LinearLayout can be used to provide a table like layout that positions items in a fashion similar to UITableView.  The RecyclerView works with two other classes to create and maintain the items it displays: an [Adapter][recyclerview-adapter-link] subclass and a [ViewHolder][viewholder-link] subclass. Let's walk through each of these classes and then tie them together in an Activity at the end.
 
 ### ViewHolder ###
 
@@ -50,21 +50,21 @@ The [ViewHolder][viewholder-link] has a simple job - to hold on to a View.  Exce
 
 The ViewHolder maintains references to the views contained within the item view.  The ViewHolder provides some efficiency to the recycler by maintaining these references so that calls to **findViewById()** are called once when the item is created as opposed to every time the item is bound to a new item in the list.  The **findViewById()** call can be an expensive call depending on the contents of the view since it is essentially walking the view hierarchy looking for the identifier specified.  Minimizing the number of calls to **findViewById()** or other view setup calls really does offer a performance improvement.  
 
-Here's a simple example of a ViewHolder that contains just one TextView.
+Here's a simple example of a ViewHolder that is composed of just one TextView.
 
 <script src="https://gist.github.com/welbesw/09a4c9bb67811f40803a044cbb376b78.js"></script>
 
 ### Adapter ###
 
-The [RecyclerView Adapter][recyclerview-adapter-link] follows the Adapter pattern used frequently in Android development.  The RecyclerView will communicate with the adapter whenever a new ViewHolder needs to be created for an item.
+So how are the ViewHolder instances created and updated?  That's the job of an adapter.  The [RecyclerView Adapter][recyclerview-adapter-link] follows the Adapter pattern used frequently in Android development.
 
-The **onCreateViewHolder()** method of the RecyclerView Adapter is called when a new ViewHolder is needed.  The method will inflate a view from a layout resource, or instantiate a view and return it to the recycler.  This method is only called when a new view holder is needed.  The RecyclerView should only need enough items to display on screen and provide some buffer when scrolling quickly.
+The **onCreateViewHolder()** method of the RecyclerView Adapter is called when a new ViewHolder is needed.  The method will inflate a view from a layout resource, or instantiate a view and return it to the recycler.  This method is only called when a new view holder is needed.  The RecyclerView should only need enough items to fill the on screen display of items currently shown and provide some buffer when scrolling.
 
 The **onBindViewHolder()** method is called each time the RecyclerView Adapter uses a ViewHolder for an item that is to be displayed on screen.  This method will be called lots of times for the items in your list.  It is prudent to be efficient in this method and simply bind the data elements of the item to the ViewHolder Views.
 
-The **getItemCount()** method is called by the RecyclerView to simply determine how many items are in the list.  The adapter is provided a reference to the items list when instantiated and will use that reference to determine the number of items in the list.
+The **getItemCount()** method is called by the RecyclerView to simply determine how many items are in the list.  It's common to provide the adapter with a reference to the list when instantiated and to use that reference to determine the number of items in the list.
 
-Below is a simple implementation of the [RecyclerView.Adapter][recyclerview-adapter-link] subclass that implements the methods described above:
+Below is a simple implementation of a [RecyclerView.Adapter][recyclerview-adapter-link] subclass that implements the methods described above:
 
 <script src="https://gist.github.com/welbesw/12ec600d78bf54ee73a844189dada973.js"></script>
 
